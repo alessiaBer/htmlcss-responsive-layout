@@ -1,3 +1,4 @@
+/* #region Common */
 * {
     margin: 0;
     padding: 0;
@@ -16,3 +17,58 @@
 body {
     font-family: 'PT Sans', sans-serif;
 }
+
+/* #endregion Common */
+
+/* #region Utilities */
+.container {
+    width: 90%;
+}
+
+.d-flex {
+    display: flex;
+}
+/* #endregion Utilities */
+
+/* #region Debug */
+.debug {
+    border: 1px dashed black;
+}
+.debug .logo,
+.debug .menu {
+    background-color: #fdc15f;
+    width: 20%;
+    height: 50px;
+}
+/* #endregion Debug */
+
+/* #region Header */
+#site_header {
+    background-color: var(--rl-secondary);
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+nav {
+    justify-content: space-between;
+}
+/* #endregion Header */
+
+/* #region Main */
+
+/*endregion Main */
+
+/* #region Footer */
+
+/* #endregion Footer */
+
+/* #region Media Queries */
+@media screen and (min-width: 768px) {
+    
+}
+
+@media screen and (min-width: 1200px) {
+    
+}
+/* #endregion Media Queries */
