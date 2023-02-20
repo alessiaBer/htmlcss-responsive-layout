@@ -64,8 +64,7 @@ h3 {
     height: 50px;
 }
 
-.debug .demo .col_12:first-child,
-.debug #call_to_action .call_body  {
+.debug .demo .col_12:first-child {
     height: 400px;
 }
 
@@ -85,7 +84,8 @@ h3 {
     height: 500px;
 }
 
-.debug #testimonials .testimonial {
+.debug #testimonials .testimonial,
+.debug #call_to_action .call_body  {
     height: 350px;
     border: 1px dashed black;
 }
@@ -95,7 +95,7 @@ h3 {
 }
 
 .debug #call_to_action .call_header {
-    height: 200px;
+    height: 150px;
 }
 /* #endregion Debug */
 
@@ -125,7 +125,8 @@ nav {
 }
 
 #benefits,
-#about {
+#about,
+#site_footer {
     padding: 2rem 0;
 }
 
@@ -140,6 +141,13 @@ nav {
 /*endregion Main */
 
 /* #region Footer */
+#site_footer {
+    background-color: var(--rl-dark);
+}
+
+.footer_top {
+    margin-bottom: 4rem;
+}
 
 /* #endregion Footer */
 
@@ -166,9 +174,12 @@ nav {
         height: 150px;
     }
     /* /debug */
-    #call_to_action .container, 
-    #site_footer .container {
+    #call_to_action .container {
         width: 75%;
+    }
+
+    #site_footer .container {
+        width: 50%;
     }
 
     .col_md_3 {
