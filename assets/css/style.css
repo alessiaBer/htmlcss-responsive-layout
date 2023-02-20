@@ -69,7 +69,8 @@ h2 {
 
 .debug .demo .col_12,
 .debug #testimonials .section_heading,
-.debug #benefits .col_12 {
+.debug #benefits .col_12,
+.debug #about .col_12:last-child {
     height: 280px;
 }
 
@@ -84,6 +85,10 @@ h2 {
 .debug #testimonials .testimonial {
     height: 350px;
     border: 1px dashed black;
+}
+
+.debug #about .col_12:first-child {
+    height: 900px;
 }
 /* #endregion Debug */
 
@@ -112,7 +117,8 @@ nav {
     margin: 1rem 0;
 }
 
-#benefits {
+#benefits,
+#about {
     padding: 2rem 0;
 }
 
@@ -133,7 +139,8 @@ nav {
         height: 400px;
     }
 
-    .debug #planning .col_12 {
+    .debug #planning .col_12,
+    .debug #about [class^="col_"] {
         height: 800px;
     }
 
@@ -142,6 +149,9 @@ nav {
         height: 175px;
     }
     /* /debug */
+    .col_md_3 {
+        width: calc(100% / 12 * 3);
+    }
 
     .col_md_4 {
         width: calc(100% / 12 * 4);
@@ -155,6 +165,10 @@ nav {
 
     .col_md_8 {
         width: calc(100% / 12 *8);
+    }
+
+    .col_md_9 {
+        width: calc(100% / 12 * 9);
     }
 
     .demo {
@@ -171,6 +185,10 @@ nav {
     .debug #planning .col_lg_6 {
         height: 600px;
     }
+
+    .debug #about [class^="col_"] {
+        height: 550px;
+    }
     /* /debug */
 
     .container {
@@ -184,6 +202,10 @@ nav {
 
     .col_lg_6 {
         width: calc(100% / 12 * 6);
+    }
+
+    .col_lg_8 {
+        width: calc(100% / 12 * 8);
     }
 }
 /* #endregion Media Queries */
