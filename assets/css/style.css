@@ -4,3 +4,15 @@
     box-sizing: border-box;
 }
 
+:root {
+    --rl-primary: #9792e4;
+    --rl-secondary: #0084fd;
+    --rl-demo: #b5ddff;
+    --rl-lighter: #fff;
+    --rl-banner: #fdc15f;
+    --rl-dark: #333333;
+}
+
+body {
+    font-family: 'PT Sans', sans-serif;
+}
