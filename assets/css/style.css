@@ -39,8 +39,14 @@ body {
     width: 100%;
 }
 
+h2 {
+    font-size: 1.7rem;
+    padding-bottom: 2rem;
+}
+
 #planning,
-#testimonials .testimonial {
+#testimonials .testimonial,
+#benefits {
     background-color: var(--rl-primary);
 }
 
@@ -62,7 +68,8 @@ body {
 }
 
 .debug .demo .col_12,
-.debug #testimonials .section_heading {
+.debug #testimonials .section_heading,
+.debug #benefits .col_12 {
     height: 280px;
 }
 
@@ -83,7 +90,6 @@ body {
 /* #region Header */
 #site_header {
     background-color: var(--rl-secondary);
-    margin: 0 auto;
 }
 
 nav {
@@ -104,6 +110,15 @@ nav {
 
 #testimonials .testimonial {
     margin: 1rem 0;
+}
+
+#benefits {
+    padding: 2rem 0;
+}
+
+#benefits .col_12 {
+    margin-bottom: 0.75rem;
+    background-color: var(--rl-lighter);
 }
 /*endregion Main */
 
@@ -127,13 +142,19 @@ nav {
         height: 175px;
     }
     /* /debug */
-    .col_md_8 {
-        width: calc(100% / 12 *8);
-    }
 
     .col_md_4 {
         width: calc(100% / 12 * 4);
         
+    }
+
+    .col_md_6 {
+        width: calc(100% / 12 * 6);
+    }
+
+
+    .col_md_8 {
+        width: calc(100% / 12 *8);
     }
 
     .demo {
@@ -155,6 +176,10 @@ nav {
     .container {
         max-width: 1152px;
         width: 60%;
+    }
+
+    .col_lg_4 {
+        width: calc(100% / 12 * 4);
     }
 
     .col_lg_6 {
