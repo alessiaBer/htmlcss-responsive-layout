@@ -39,14 +39,15 @@ body {
     width: 100%;
 }
 
-h2 {
+h3 {
     font-size: 1.7rem;
     padding-bottom: 2rem;
 }
 
 #planning,
 #testimonials .testimonial,
-#benefits {
+#benefits,
+#call_to_action {
     background-color: var(--rl-primary);
 }
 
@@ -63,18 +64,20 @@ h2 {
     height: 50px;
 }
 
-.debug .demo .col_12:first-child {
+.debug .demo .col_12:first-child,
+.debug #call_to_action .call_body  {
     height: 400px;
 }
 
 .debug .demo .col_12,
-.debug #testimonials .section_heading,
+.debug #testimonials .section_header,
 .debug #benefits .col_12,
 .debug #about .col_12:last-child {
     height: 280px;
 }
 
-.debug [class^="col_"] {
+.debug [class^="col_"],
+.debug #call_to_action .call_header {
     border: 1px dashed black;
 }
 
@@ -89,6 +92,10 @@ h2 {
 
 .debug #about .col_12:first-child {
     height: 900px;
+}
+
+.debug #call_to_action .call_header {
+    height: 200px;
 }
 /* #endregion Debug */
 
@@ -126,6 +133,10 @@ nav {
     margin-bottom: 0.75rem;
     background-color: var(--rl-lighter);
 }
+
+#call_to_action {
+    padding: 3rem 0 4rem 0;
+}
 /*endregion Main */
 
 /* #region Footer */
@@ -135,20 +146,31 @@ nav {
 /* #region Media Queries */
 @media screen and (min-width: 768px) {
     /* debug */
-    .debug .demo .col_12:nth-child(2) {
+    .debug .demo .col_12:nth-child(2),
+    .debug #call_to_action .call_body {
         height: 400px;
     }
 
     .debug #planning .col_12,
-    .debug #about [class^="col_"] {
+    .debug #about .row .col_md_3,
+    .debug #about .row .col_md_9 {
         height: 800px;
     }
 
     .debug #testimonials .testimonial,
-    .debug #testimonials .section_heading {
+    .debug #testimonials .section_header {
         height: 175px;
     }
+
+    .debug #call_to_action .call_header {
+        height: 150px;
+    }
     /* /debug */
+    #call_to_action .container, 
+    #site_footer .container {
+        width: 75%;
+    }
+
     .col_md_3 {
         width: calc(100% / 12 * 3);
     }
@@ -175,6 +197,8 @@ nav {
         padding: 2rem 0 4rem 0;
     }
 }
+
+
 
 @media screen and (min-width: 1200px) {
     /* debug */
@@ -206,6 +230,11 @@ nav {
 
     .col_lg_8 {
         width: calc(100% / 12 * 8);
+    }
+
+    #call_to_action .container,
+    #site_footer .container {
+        width: 40%;
     }
 }
 /* #endregion Media Queries */
