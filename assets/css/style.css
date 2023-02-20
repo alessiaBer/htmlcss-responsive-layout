@@ -40,7 +40,8 @@ body {
     width: 100%;
 }
 
-h3 {
+
+h2 {
     font-size: 1.7rem;
     padding-bottom: 2rem;
 }
@@ -105,10 +106,10 @@ a.sec-btn {
 .debug #call_to_action .call_header {
     border: 1px dashed black;
 } */
-
+/* 
 .debug #planning .col_12 {
     height: 500px;
-}
+} */
 
 .debug #testimonials .testimonial,
 .debug #call_to_action .call_body  {
@@ -154,7 +155,7 @@ nav {
 /* #region Main */
 .demo [class^="col_"] {
     background-color: var(--rl-demo);
-    margin-bottom: 0.75rem;
+    margin-bottom: 1rem;
     border-radius: 1rem;
 }
 .demo .card {
@@ -193,6 +194,43 @@ nav {
 }
 
 /* /.demo */
+#planning h2 {
+    padding-top: 1.5rem;
+}
+#planning .col_12 img {
+    width: 100%;
+    padding-bottom: 2rem;
+}
+
+#planning .col_12:first-child {
+    color: var(--rl-lighter);
+    padding: 2rem 0;
+}
+
+#planning .col_12:first-child p {
+    line-height: 1.5rem;
+}
+
+#planning .plan-card {
+    background-color: var(--rl-lighter);
+    border-radius: 2rem;
+    padding: 1.5rem;
+    text-align: center;
+}
+
+
+#planning .plan-card p {
+    font-style: italic;
+    padding-bottom: 2rem;
+    line-height: 2rem;
+}
+
+#planning i {
+    background-color: var(--rl-primary);
+    padding: 1rem 1.2rem;
+    border-radius: 50%;
+}
+/* /#planning */
 #testimonials .testimonial {
     margin: 1rem 0;
 }
@@ -230,8 +268,6 @@ nav {
     .debug #call_to_action .call_body {
         height: 400px;
     }
-
-    .debug #planning .col_12,
     .debug #about .row .col_md_3,
     .debug #about .row .col_md_9 {
         height: 800px;
@@ -246,6 +282,9 @@ nav {
         height: 150px;
     }
     /* /debug */
+    .container {
+        width: 90%;
+    }
 
     .col_md_3 {
         width: calc(100% / 12 * 3);
@@ -308,6 +347,11 @@ nav {
     }
 
     /* /demo */
+    #planning h2 {
+        font-size: 4rem;
+        padding: 3.5rem 0;
+    }
+
     #call_to_action .container {
         width: 75%;
     }
@@ -322,9 +366,9 @@ nav {
 @media screen and (min-width: 1200px) {
     /* debug */
 
-    .debug #planning .col_lg_6 {
+ /*    .debug #planning .col_lg_6 {
         height: 600px;
-    }
+    } */
 
     .debug #about [class^="col_"] {
         height: 550px;
@@ -376,6 +420,42 @@ nav {
     }
     .demo .card-right img {
         width: 70%;
+    }
+    /* /.demo */
+    #planning .container {
+        width: 50%;
+        padding-top: 3rem;
+    }
+
+    #planning h2 {
+        font-size: 1.7rem;
+    }
+
+    #planning .col_lg_6:first-child {
+        padding-bottom: 0;
+        padding-left: 2;
+    }
+
+    #planning .col_lg_6:last-child {
+        padding-left: 2rem;
+        display: flex;
+        align-items: flex-end;
+    }
+
+    #planning .plan-card img {
+        width: 75%;
+    }
+
+    #planning .plan-card p {
+        line-height: 1.2rem;
+        font-size: 0.8rem;
+    }
+
+    #planning i {
+        background-color: var(--rl-primary);
+        padding: 0.5rem 0.7rem;
+        border-radius: 50%;
+        font-size: 1rem;
     }
 
     #call_to_action .container,
