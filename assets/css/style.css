@@ -12,6 +12,7 @@
     --rl-lighter: #fff;
     --rl-banner: #fdc15f;
     --rl-dark: #333333;
+    --rl-darker: #000;
 }
 
 body {
@@ -22,7 +23,7 @@ body {
 
 /* #region Utilities */
 .container {
-    width: 90%;
+    width: 85%;
     margin: 0 auto;
 }
 
@@ -44,6 +45,18 @@ h3 {
     padding-bottom: 2rem;
 }
 
+.nav_list a {
+    text-decoration: none;
+    color: var(--rl-lighter);
+}
+
+.nav_list a.white-btn {
+    color: var(--rl-darker);
+    background-color: var(--rl-lighter);
+    padding: 0.3rem 0.6rem;
+    border-radius: 1rem;
+}
+
 #planning,
 #testimonials .testimonial,
 #benefits,
@@ -54,15 +67,7 @@ h3 {
 /* #endregion Utilities */
 
 /* #region Debug */
-.debug .container {
-    border: 1px dashed black;
-}
-.debug .logo,
-.debug .menu {
-    background-color: #fdc15f;
-    width: 20%;
-    height: 50px;
-}
+
 
 .debug .demo .col_12:first-child {
     height: 400px;
@@ -106,6 +111,22 @@ h3 {
 
 nav {
     justify-content: space-between;
+    padding: 0.7rem 0;
+}
+
+.menu {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.menu i {
+    font-size: 1.5rem;
+    color: var(--rl-lighter);
+}
+
+.nav_list {
+    display: none;
 }
 /* #endregion Header */
 
@@ -174,14 +195,8 @@ nav {
         height: 150px;
     }
     /* /debug */
-    #call_to_action .container {
-        width: 75%;
-    }
 
-    #site_footer .container {
-        width: 50%;
-    }
-
+    
     .col_md_3 {
         width: calc(100% / 12 * 3);
     }
@@ -203,9 +218,26 @@ nav {
     .col_md_9 {
         width: calc(100% / 12 * 9);
     }
+    /* /utilities */
 
+    #site_header .logo img {
+        width: 85%;
+    }
+
+    .menu i {
+        font-size: 1.2rem;
+    }
+    /* /header */
     .demo {
         padding: 2rem 0 4rem 0;
+    }
+    /* /demo */
+    #call_to_action .container {
+        width: 75%;
+    }
+
+    #site_footer .container {
+        width: 50%;
     }
 }
 
@@ -242,7 +274,23 @@ nav {
     .col_lg_8 {
         width: calc(100% / 12 * 8);
     }
+    /* /utilities */
+    .menu i {
+        display: none;
+    }
 
+    .nav_list {
+        display: inline-block;
+        list-style: none;
+        display: flex;
+    }
+
+    .nav_list li {
+        padding-left: 1rem;
+        font-weight: 300;
+        font-size: 0.8rem;
+    }
+    /* /header */
     #call_to_action .container,
     #site_footer .container {
         width: 40%;
