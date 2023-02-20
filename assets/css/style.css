@@ -45,16 +45,38 @@ h3 {
     padding-bottom: 2rem;
 }
 
+h4 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    padding-bottom: 1.5rem;
+}
+
+a {
+    display: inline-block;
+}
+
 .nav_list a {
     text-decoration: none;
     color: var(--rl-lighter);
 }
 
-.nav_list a.white-btn {
+a.white-btn {
     color: var(--rl-darker);
     background-color: var(--rl-lighter);
     padding: 0.3rem 0.6rem;
     border-radius: 1rem;
+}
+
+a.sec-btn {
+    color: var(--rl-lighter);
+    letter-spacing: 0.2rem;
+    background-color: var(--rl-secondary);
+    padding: 0.3rem 1.2rem;
+    border-radius: 1rem;
+    text-decoration: none;
+    margin: 1.5rem 0;
+    font-size: 0.8rem;
+    font-weight: bold;
 }
 
 #planning,
@@ -64,26 +86,25 @@ h3 {
     background-color: var(--rl-primary);
 }
 
+.demo, 
+#planning,
+#testimonials {
+    padding: 2rem 0 3rem 0;
+}
+
 /* #endregion Utilities */
 
 /* #region Debug */
-
-
-.debug .demo .col_12:first-child {
-    height: 400px;
-}
-
-.debug .demo .col_12,
 .debug #testimonials .section_header,
 .debug #benefits .col_12,
 .debug #about .col_12:last-child {
     height: 280px;
 }
 
-.debug [class^="col_"],
+/*  .debug [class^="col_"],
 .debug #call_to_action .call_header {
     border: 1px dashed black;
-}
+} */
 
 .debug #planning .col_12 {
     height: 500px;
@@ -131,16 +152,47 @@ nav {
 /* #endregion Header */
 
 /* #region Main */
-.demo, 
-#planning,
-#testimonials {
-    padding: 2rem 0 3rem 0;
-}
 .demo [class^="col_"] {
     background-color: var(--rl-demo);
     margin-bottom: 0.75rem;
+    border-radius: 1rem;
+}
+.demo .card {
+    color: var(--rl-dark);
+    padding: 1.5rem;
+    text-align: center;
 }
 
+.demo .card .card-left {
+    text-align: left;
+}
+
+.demo h4 {
+    color: var(--rl-secondary);
+}
+
+.demo p {
+    font-size: 0.75rem;
+    line-height: 1.2rem;
+}
+
+.card-right {
+    margin: 0 auto;
+    justify-content: center;
+}
+
+.card-right img {
+    width: 80%;
+    margin-bottom: -1.5rem;
+}
+
+.card .icon {
+    font-size: 5rem;
+    color: var(--rl-secondary);
+    padding-bottom: 1rem;
+}
+
+/* /.demo */
 #testimonials .testimonial {
     margin: 1rem 0;
 }
@@ -175,7 +227,6 @@ nav {
 /* #region Media Queries */
 @media screen and (min-width: 768px) {
     /* debug */
-    .debug .demo .col_12:nth-child(2),
     .debug #call_to_action .call_body {
         height: 400px;
     }
@@ -196,7 +247,6 @@ nav {
     }
     /* /debug */
 
-    
     .col_md_3 {
         width: calc(100% / 12 * 3);
     }
@@ -218,6 +268,15 @@ nav {
     .col_md_9 {
         width: calc(100% / 12 * 9);
     }
+
+    a.sec-btn {
+        padding: 0.5rem 1.7rem;
+        border-radius: 1rem;
+        text-decoration: none;
+        margin: 1.5rem 0;
+        font-size: 0.8rem;
+        font-weight: bold;
+    }
     /* /utilities */
 
     #site_header .logo img {
@@ -231,6 +290,23 @@ nav {
     .demo {
         padding: 2rem 0 4rem 0;
     }
+
+    .demo .row {
+        margin: 0 -1rem;
+    }
+    /***** TODO *****/
+    .demo .card {
+        margin: 0 0.5rem;
+    }
+
+    .demo .card-right {
+        justify-content: flex-start;
+    }
+
+    .demo .card-right img {
+        width: 40%;
+    }
+
     /* /demo */
     #call_to_action .container {
         width: 75%;
@@ -245,9 +321,6 @@ nav {
 
 @media screen and (min-width: 1200px) {
     /* debug */
-    .debug .demo .row [class^="col_"] {
-        height: 280px;
-    }
 
     .debug #planning .col_lg_6 {
         height: 600px;
@@ -291,6 +364,20 @@ nav {
         font-size: 0.8rem;
     }
     /* /header */
+    .demo .col_md_8 .card {
+        display: flex;
+    }
+    .card-left , .card-right {
+        width: 50%;
+    }
+    .demo .card-right {
+        justify-content: center;
+        margin: 0 auto;
+    }
+    .demo .card-right img {
+        width: 70%;
+    }
+
     #call_to_action .container,
     #site_footer .container {
         width: 40%;
