@@ -612,13 +612,15 @@ nav {
 
     .demo .card-right {
         justify-content: center;
+        align-items: flex-end;
         margin: 0 auto;
     }
 
     .demo .card-right img {
-        max-width: 70%;
+        max-width: 80%;
+        object-fit: contain;
         margin-bottom: 0;
-    }
+    } 
 
     /* /.demo */
     #planning .container {
