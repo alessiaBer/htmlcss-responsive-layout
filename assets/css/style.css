@@ -34,6 +34,11 @@ body {
 .row {
     display: flex;
     flex-wrap: wrap;
+    margin: 0 -1rem;
+}
+
+[class^="col_"] {
+    padding: 0.5rem 0.5rem;
 }
 
 .col_12 {
@@ -95,7 +100,6 @@ a.sec-btn {
 /* #endregion Utilities */
 
 /* #region Debug */
-.debug #testimonials .section_header,
 .debug #benefits .col_12,
 .debug #about .col_12:last-child {
     height: 280px;
@@ -149,14 +153,9 @@ nav {
 /* #endregion Header */
 
 /* #region Main */
-.demo .row {
-    margin: 0 -1rem;
-}
-
 .demo [class^="col_"] {
-    margin-bottom: 1rem;
+    margin-bottom: 0.5rem;
     border-radius: 1rem;
-    padding: 0.5rem 0.5rem;
 }
 .demo .card {
     border-radius: 1rem;
@@ -234,10 +233,56 @@ nav {
     border-radius: 50%;
 }
 /* /#planning */
+#testimonials {
+    padding-bottom: 5rem; 
+}
+#testimonials .container {
+    text-align: center;
+}
+
+#testimonials .section_header {
+    padding: 2rem 0;
+}
 
 #testimonials .testimonial {
     margin: 1rem 0;
+    border-radius: 3rem;
+    color: var(--rl-dark);
+    padding: 1.5rem;
+    text-align: center;
 }
+
+#testimonials h3,
+#about h3 {
+    color: var(--rl-primary);
+}
+
+#testimonials .section_header {
+    color: var(--rl-dark);
+    font-size: 1.2rem;
+}
+
+.testimonial .avatar img {
+    width: 100%;
+}
+
+.testimonial .bio i {
+    font-size: 1.5rem;
+}
+
+.testimonial .bio {
+    font-size: 1.2rem;
+    color: var(--rl-lighter);
+    padding: 1rem 0 0.7rem 0;
+}
+
+#testimonials .bio span.name {
+    font-size: 1.2rem;
+    color: var(--rl-lighter);
+    display: block;
+    padding-top: 2rem;
+}
+
 
 #benefits,
 #about,
@@ -277,10 +322,6 @@ nav {
         height: 800px;
     }
 
-    .debug #testimonials .testimonial,
-    .debug #testimonials .section_header {
-        height: 175px;
-    }
 
     .debug #call_to_action .call_header {
         height: 150px;
@@ -345,12 +386,42 @@ nav {
     .demo .card-right img {
         max-width: 40%;
     }
-
     /* /demo */
+
     #planning h3 {
         font-size: 4rem;
         padding: 3.5rem 0;
     }
+    /* /planning */
+
+    #testimonials .testimonial {
+        display: flex;
+        padding: 2rem;
+    }
+
+    #testimonials .testimonial .avatar {
+        width: 40%;
+    }
+
+    .testimonial .avatar img {
+        width: 100%;
+    }
+
+    .testimonial .bio {
+        align-self: center;
+        font-size: 1.2rem;
+        text-align: left;
+        padding-left: 2rem;
+    }
+
+    #testimonials .bio span.name {
+        font-size: 1rem;
+        color: var(--rl-lighter);
+        font-weight: bold;
+        display: block;
+        padding-top: 1.5rem;
+    }
+    /* /testimonials */
 
     #call_to_action .container {
         width: 75%;
