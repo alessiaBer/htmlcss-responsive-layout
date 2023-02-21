@@ -385,15 +385,26 @@ nav {
 /* #region Footer */
 #site_footer {
     background-color: var(--rl-dark);
+    color: var(--rl-lighter);
+    font-size: 0.75rem;
+    text-align: center;
 }
 
 .footer_top {
     margin-bottom: 4rem;
 }
 
+.footer_bottom a {
+    color: var(--rl-primary);
+}
+
 /* #endregion Footer */
 
-/* #region Media Queries */
+
+
+
+
+/***** #region Media Queries *****/
 @media screen and (min-width: 768px) {
     /* debug */
     .debug #call_to_action .call_body {
@@ -531,9 +542,11 @@ nav {
     /* /#call_to_action */
 
     #site_footer .container {
-        width: 50%;
+        width: 40%;
     }
 }
+
+
 
 
 
@@ -631,10 +644,12 @@ nav {
     }
     /* /#about */
 
-    #call_to_action .container,
-    #site_footer .container {
+    #call_to_action .container {
         width: 40%;
     }
     /* /#call_to_action */
+    #site_footer .container {
+        width: 30%;
+    }
 }
-/* #endregion Media Queries */
+/***** #endregion Media Queries *****/
