@@ -58,11 +58,6 @@ h4 {
     padding-bottom: 1.5rem;
 }
 
-a {
-    display: inline-block;
-    text-decoration: none;
-}
-
 .nav_list a {
     color: var(--rl-lighter);
 }
@@ -72,6 +67,8 @@ a.white-btn {
     background-color: var(--rl-lighter);
     padding: 0.3rem 0.6rem;
     border-radius: 1rem;
+    text-decoration: none;
+    display: inline-block;
 }
 
 a.sec-btn {
@@ -82,6 +79,7 @@ a.sec-btn {
     border-radius: 1rem;
     text-decoration: none;
     margin: 1.5rem 0;
+    display: inline-block;
 }
 
 a.primary-btn {
@@ -94,6 +92,8 @@ a.primary-btn {
     font-weight: bold;
     letter-spacing: 0.2rem;
     margin: 1.5rem 0 1rem 0;
+    text-decoration: none;
+    display: inline-block;
 }
 
 #planning,
@@ -336,8 +336,49 @@ nav {
     padding: 0.5rem 1.2rem;
 }
 /* /#about */
+
 #call_to_action {
     padding: 3rem 0 4rem 0;
+    text-align: center;
+    color: var(--rl-lighter);
+}
+
+#call_to_action .start {
+    color: rgba(255, 255, 255, 0.637);
+    letter-spacing: 0.2rem;
+}
+
+#call_to_action h3 {
+    padding-top: 1rem;
+}
+
+#call_to_action h2 {
+    font-size: 3rem;
+    color: var(--rl-banner);
+    padding-bottom: 1.5rem;
+}
+
+#call_to_action p {
+    font-size: 0.8rem;
+}
+
+#call_to_action .white-btn {
+    font-size: 0.8rem;
+    font-weight: bold;
+    letter-spacing: 0.2rem;
+    color: var(--rl-primary);
+    margin: 1.5rem 0;
+    padding: 1rem 3rem;
+    border-radius: 2rem;
+}
+
+#call_to_action .copyright {
+    display: block;
+    font-size: 0.7rem;
+}
+
+#call_to_action a.privacy {
+    color: var(--rl-lighter);
 }
 /*endregion Main */
 
@@ -473,10 +514,21 @@ nav {
     #about p {
         margin-bottom: 2rem;
     }
-
-    #call_to_action .container {
-        width: 75%;
+    /* /#about */
+    
+    #call_to_action h3 {
+        font-size: 2rem;
     }
+
+    #call_to_action h2 {
+        font-size: 4rem;
+    }
+
+    #call_to_action p {
+        width: 55%;
+        margin: 0 auto;
+    }
+    /* /#call_to_action */
 
     #site_footer .container {
         width: 50%;
@@ -486,12 +538,6 @@ nav {
 
 
 @media screen and (min-width: 1200px) {
-    /* debug */
-
-    .debug #about [class^="col_"] {
-        height: 550px;
-    }
-    /* /debug */
 
     .container {
         max-width: 1152px;
@@ -579,10 +625,16 @@ nav {
         border-radius: 50%;
         font-size: 1rem;
     }
+    /* /planning */
+    #about .container {
+        width: 55%;
+    }
+    /* /#about */
 
     #call_to_action .container,
     #site_footer .container {
         width: 40%;
     }
+    /* /#call_to_action */
 }
 /* #endregion Media Queries */
