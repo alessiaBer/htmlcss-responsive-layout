@@ -496,7 +496,7 @@ nav {
 
     #testimonials .testimonial {
         display: flex;
-        padding: 2rem;
+        padding: 1.5rem;
     }
 
     #testimonials .testimonial .avatar {
@@ -507,7 +507,7 @@ nav {
         align-self: center;
         font-size: 1rem;
         text-align: left;
-        padding-left: 2rem;
+        padding: 0 4rem 0 3rem;
     }
 
     #testimonials .bio span.name {
@@ -657,6 +657,11 @@ nav {
         font-size: 1rem;
     }
     /* /planning */
+    #testimonials .testimonial .avatar {
+        width: 40%;
+    }
+    /* /#testimonials */
+
     #about .container {
         width: 55%;
     }
