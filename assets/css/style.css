@@ -106,10 +106,7 @@ a.sec-btn {
 .debug #call_to_action .call_header {
     border: 1px dashed black;
 } */
-/* 
-.debug #planning .col_12 {
-    height: 500px;
-} */
+
 
 .debug #testimonials .testimonial,
 .debug #call_to_action .call_body  {
@@ -192,8 +189,8 @@ nav {
     color: var(--rl-secondary);
     padding-bottom: 1rem;
 }
-
 /* /.demo */
+
 #planning h2 {
     padding-top: 1.5rem;
 }
@@ -231,6 +228,7 @@ nav {
     border-radius: 50%;
 }
 /* /#planning */
+
 #testimonials .testimonial {
     margin: 1rem 0;
 }
@@ -331,11 +329,11 @@ nav {
     }
 
     .demo .row {
-        margin: 0 -1rem;
+        margin: 0 -2rem;
     }
-    /***** TODO *****/
-    .demo .card {
-        margin: 0 0.5rem;
+
+    .demo [class^="col_"] {
+        margin: 0.5rem 0.5rem;
     }
 
     .demo .card-right {
