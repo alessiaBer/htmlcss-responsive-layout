@@ -24,7 +24,7 @@ body {
 
 /* #region Utilities */
 .container {
-    width: 85%;
+    width: 81%;
     margin: 0 auto;
 }
 
@@ -183,13 +183,13 @@ nav {
     padding-top: 1.5rem;
 }
 #planning .col_12 img {
-    max-width: 100%;
+    width: 100%;
     padding-bottom: 2rem;
 }
 
 #planning .col_12:first-child {
     color: var(--rl-lighter);
-    padding: 2rem 0;
+    padding: 2rem 2rem;
 }
 
 #planning .col_12:first-child p {
@@ -297,9 +297,45 @@ nav {
 #benefits .card p {
     color: var(--rl-grey);
 }
-
 /* /#benefits */
 
+#about h2 {
+    color: var(--rl-primary);
+    font-size: 2.5rem;
+    padding-bottom: 2rem;
+}
+
+#about p {
+    color: var(--rl-dark);
+    font-size: 1rem;
+    line-height: 1.9rem;
+    padding-bottom: 2.5rem;
+}
+
+#about img {
+    width: 60%;
+}
+
+#about .img-container i {
+    color: var(--rl-primary);
+    font-size: 3.5rem;
+}
+
+#about span.quotation {
+    color: var(--rl-primary);
+    font-size: 1.3rem;
+    font-weight: bold;
+    line-height: 2rem;
+    display: block;
+    padding: 1.5rem 0 2rem 0;
+}
+
+#about a.primary-btn {
+    font-weight: normal;
+    letter-spacing: normal;
+    padding: 0.5rem 1.2rem;
+}
+/* /#about */
 #call_to_action {
     padding: 3rem 0 4rem 0;
 }
@@ -321,10 +357,6 @@ nav {
     /* debug */
     .debug #call_to_action .call_body {
         height: 400px;
-    }
-    .debug #about .row .col_md_3,
-    .debug #about .row .col_md_9 {
-        height: 800px;
     }
 
 
@@ -426,7 +458,21 @@ nav {
         padding-top: 1.5rem;
     }
     /* /testimonials */
+    #about .container {
+        width: 83%;
+    }
 
+    #about .col_md_8 {
+        padding-right: 6rem;
+    }
+
+    #about h2 {
+        font-size: 3rem;
+    }
+
+    #about p {
+        margin-bottom: 2rem;
+    }
 
     #call_to_action .container {
         width: 75%;
