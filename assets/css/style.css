@@ -60,6 +60,7 @@ h4 {
 
 .nav_list a {
     color: var(--rl-lighter);
+    text-decoration: none;
 }
 
 a.white-btn {
@@ -158,7 +159,7 @@ nav {
 }
 
 .demo p {
-    font-size: 0.75rem;
+    font-size: 0.9rem;
     line-height: 1.2rem;
 }
 
@@ -194,6 +195,7 @@ nav {
 
 #planning .col_12:first-child p {
     line-height: 1.5rem;
+    font-size: 0.9rem;
 }
 
 #planning .plan-card {
@@ -246,8 +248,18 @@ nav {
     font-size: 1.2rem;
 }
 
+.testimonial .avatar {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    width: 70%;
+    aspect-ratio: 1 / 1;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
 .testimonial .avatar img {
-    width: 100%;
+    height: 100%;
 }
 
 .testimonial .bio i {
@@ -255,7 +267,7 @@ nav {
 }
 
 .testimonial .bio {
-    font-size: 1.2rem;
+    font-size: 1rem;
     color: var(--rl-lighter);
     padding: 1rem 0 0.7rem 0;
 }
@@ -296,6 +308,8 @@ nav {
 
 #benefits .card p {
     color: var(--rl-grey);
+    font-size: 0.9rem;
+    line-height: 1.5rem;
 }
 /* /#benefits */
 
@@ -307,18 +321,26 @@ nav {
 
 #about p {
     color: var(--rl-dark);
-    font-size: 1rem;
+    font-size: 0.9rem;
     line-height: 1.9rem;
     padding-bottom: 2.5rem;
 }
 
+#about .img-container {
+    position: relative;
+}
+
 #about img {
     width: 60%;
+    border-radius: 50%;
 }
 
 #about .img-container i {
     color: var(--rl-primary);
     font-size: 3.5rem;
+    position: absolute;
+    top: 0;
+    right: 35%;
 }
 
 #about span.quotation {
@@ -406,16 +428,6 @@ nav {
 
 /***** #region Media Queries *****/
 @media screen and (min-width: 768px) {
-    /* debug */
-    .debug #call_to_action .call_body {
-        height: 400px;
-    }
-
-
-    .debug #call_to_action .call_header {
-        height: 150px;
-    }
-    /* /debug */
     .container {
         width: 90%;
     }
@@ -474,6 +486,7 @@ nav {
     .demo .card-right img {
         max-width: 40%;
     }
+
     /* /demo */
 
     #planning h3 {
@@ -491,13 +504,9 @@ nav {
         width: 40%;
     }
 
-    .testimonial .avatar img {
-        width: 100%;
-    }
-
     .testimonial .bio {
         align-self: center;
-        font-size: 1.2rem;
+        font-size: 1rem;
         text-align: left;
         padding-left: 2rem;
     }
@@ -524,6 +533,10 @@ nav {
 
     #about p {
         margin-bottom: 2rem;
+    }
+
+    #about .img-container i {
+        right: 25%;
     }
     /* /#about */
     
@@ -577,6 +590,7 @@ nav {
         display: inline-block;
         list-style: none;
         display: flex;
+        align-items: center;
     }
 
     .nav_list li {
@@ -587,7 +601,7 @@ nav {
     /* /header */
     .demo .col_md_8 .card {
         display: flex;
-        height: 100%;
+        padding-bottom: 0 !important;
     }
 
     .card-left , .card-right {
@@ -601,7 +615,9 @@ nav {
 
     .demo .card-right img {
         max-width: 70%;
+        margin-bottom: 0;
     }
+
     /* /.demo */
     #planning .container {
         width: 50%;
@@ -641,6 +657,10 @@ nav {
     /* /planning */
     #about .container {
         width: 55%;
+    }
+
+    #about .img-container i {
+        right: 30%;
     }
     /* /#about */
 
