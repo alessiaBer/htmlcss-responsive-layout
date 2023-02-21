@@ -40,7 +40,6 @@ body {
 
 [class^="col_"] {
     padding: 0.5rem 0.5rem;
-    margin-bottom: 0.5rem;
 }
 
 .col_12 {
@@ -295,7 +294,7 @@ nav {
     background-color: var(--rl-lighter);
     border-radius: 1rem;
     padding: 1.5rem;
-    margin-top: 2rem;
+    margin-top: 1.5rem;
     color: var(--rl-primary);
 }
 
@@ -519,6 +518,9 @@ nav {
         padding-top: 1.5rem;
     }
     /* /testimonials */
+    #benefits .card {
+        margin-top: 0;
+    }
     #about .container {
         width: 83%;
     }
