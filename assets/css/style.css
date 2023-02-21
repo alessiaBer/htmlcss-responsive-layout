@@ -40,8 +40,6 @@ body {
     width: 100%;
 }
 
-
-
 h3 {
     font-size: 1.7rem;
     padding-bottom: 2rem;
@@ -151,16 +149,23 @@ nav {
 /* #endregion Header */
 
 /* #region Main */
+.demo .row {
+    margin: 0 -1rem;
+}
+
 .demo [class^="col_"] {
-    background-color: var(--rl-demo);
     margin-bottom: 1rem;
     border-radius: 1rem;
+    padding: 0.5rem 0.5rem;
 }
 .demo .card {
+    border-radius: 1rem;
+    background-color: var(--rl-demo);
     color: var(--rl-dark);
     padding: 1.5rem;
     text-align: center;
 }
+
 
 .demo .card .card-left {
     text-align: left;
@@ -181,7 +186,7 @@ nav {
 }
 
 .card-right img {
-    width: 80%;
+    max-width: 80%;
     margin-bottom: -1.5rem;
 }
 
@@ -196,7 +201,7 @@ nav {
     padding-top: 1.5rem;
 }
 #planning .col_12 img {
-    width: 100%;
+    max-width: 100%;
     padding-bottom: 2rem;
 }
 
@@ -318,7 +323,7 @@ nav {
     /* /utilities */
 
     #site_header .logo img {
-        width: 85%;
+        max-width: 85%;
     }
 
     .menu i {
@@ -329,12 +334,8 @@ nav {
         padding: 2rem 0 4rem 0;
     }
 
-    .demo .row {
-        margin: 0 -1rem;
-    }
-
-    .demo [class^="col_"] {
-        padding: 0.5rem 0.5rem;
+    .demo .card {
+        height: 100%;
     }
 
     .demo .card-right {
@@ -342,7 +343,7 @@ nav {
     }
 
     .demo .card-right img {
-        width: 40%;
+        max-width: 40%;
     }
 
     /* /demo */
@@ -409,6 +410,7 @@ nav {
     /* /header */
     .demo .col_md_8 .card {
         display: flex;
+        height: 100%;
     }
     .card-left , .card-right {
         width: 50%;
@@ -418,7 +420,7 @@ nav {
         margin: 0 auto;
     }
     .demo .card-right img {
-        width: 70%;
+        max-width: 70%;
     }
     /* /.demo */
     #planning .container {
