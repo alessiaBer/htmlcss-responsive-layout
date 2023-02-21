@@ -41,7 +41,8 @@ body {
 }
 
 
-h2 {
+
+h3 {
     font-size: 1.7rem;
     padding-bottom: 2rem;
 }
@@ -108,7 +109,7 @@ a.sec-btn {
 } */
 
 
-.debug #testimonials .testimonial,
+/* .debug #testimonials .testimonial, */
 .debug #call_to_action .call_body  {
     height: 350px;
     border: 1px dashed black;
@@ -191,7 +192,7 @@ nav {
 }
 /* /.demo */
 
-#planning h2 {
+#planning h3 {
     padding-top: 1.5rem;
 }
 #planning .col_12 img {
@@ -329,11 +330,11 @@ nav {
     }
 
     .demo .row {
-        margin: 0 -2rem;
+        margin: 0 -1rem;
     }
 
     .demo [class^="col_"] {
-        margin: 0.5rem 0.5rem;
+        padding: 0.5rem 0.5rem;
     }
 
     .demo .card-right {
@@ -345,7 +346,7 @@ nav {
     }
 
     /* /demo */
-    #planning h2 {
+    #planning h3 {
         font-size: 4rem;
         padding: 3.5rem 0;
     }
@@ -425,7 +426,7 @@ nav {
         padding-top: 3rem;
     }
 
-    #planning h2 {
+    #planning h3 {
         font-size: 1.7rem;
     }
 
