@@ -23,6 +23,57 @@ body {
 /* #endregion Common */
 
 /* #region Utilities */
+/*** utility col ***/
+.col_1 {
+    width: calc(100% / 12);
+}
+
+.col_2 {
+    width: calc(100% / 12 * 2);
+}
+
+.col_3 {
+    width: calc(100% / 12 * 3);
+}
+
+.col_4 {
+    width: calc(100% / 12 * 4);
+}
+
+.col_5 {
+    width: calc(100% / 12 * 5);
+}
+
+.col_6 {
+    width: calc(100% / 12 * 6);
+}
+
+.col_7 {
+    width: calc(100% / 12 * 7);
+}
+
+.col_8 {
+    width: calc(100% / 12 * 8);
+}
+
+.col_9 {
+    width: calc(100% / 12 * 9);
+}
+
+.col_10 {
+    width: calc(100% / 12 * 10);
+}
+
+.col_11 {
+    width: calc(100% / 12 * 11);
+}
+
+.col_12 {
+    width: 100%;
+}
+
+/*** utility col ***/
+
 .container {
     width: 81%;
     margin: 0 auto;
@@ -40,10 +91,6 @@ body {
 
 [class^="col_"] {
     padding: 0.5rem 0.5rem;
-}
-
-.col_12 {
-    width: 100%;
 }
 
 h3 {
@@ -138,9 +185,6 @@ nav {
 /* #endregion Header */
 
 /* #region Main */
-.demo [class^="col_"] {
-    border-radius: 1rem;
-}
 .demo .card {
     border-radius: 1rem;
     background-color: var(--rl-demo);
@@ -182,7 +226,7 @@ nav {
 #planning h3 {
     padding-top: 1.5rem;
 }
-#planning .col_12 img {
+#planning img {
     width: 100%;
     padding-bottom: 2rem;
 }
@@ -192,7 +236,7 @@ nav {
     padding: 2rem 2rem;
 }
 
-#planning .col_12:first-child p {
+#strategic p {
     line-height: 1.5rem;
     font-size: 0.9rem;
 }
@@ -244,7 +288,7 @@ nav {
 
 #testimonials .section_header {
     color: var(--rl-dark);
-    font-size: 1.2rem;
+    font-size: 1rem;
 }
 
 .testimonial .avatar {
@@ -431,6 +475,14 @@ nav {
         width: 90%;
     }
 
+    .col_md_1 {
+        width: calc(100% / 12);
+    }
+
+    .col_md_2 {
+        width: calc(100% / 12 * 2);
+    }
+
     .col_md_3 {
         width: calc(100% / 12 * 3);
     }
@@ -439,10 +491,17 @@ nav {
         width: calc(100% / 12 * 4);
     }
 
+    .col_md_5 {
+        width: calc(100% / 12 * 5);
+    }
+
     .col_md_6 {
         width: calc(100% / 12 * 6);
     }
 
+    .col_md_7 {
+        width: calc(100% / 12 * 7);
+    }
 
     .col_md_8 {
         width: calc(100% / 12 *8);
@@ -450,6 +509,18 @@ nav {
 
     .col_md_9 {
         width: calc(100% / 12 * 9);
+    }
+
+    .col_md_10 {
+        width: calc(100% / 12 * 10);
+    }
+
+    .col_md_11 {
+        width: calc(100% / 12 * 11);
+    }
+
+    .col_md_12 {
+        width: calc(100% / 12 * 12);
     }
 
     a.sec-btn {
@@ -518,6 +589,7 @@ nav {
         padding-top: 1.5rem;
     }
     /* /testimonials */
+
     #benefits .card {
         margin-top: 0;
     }
@@ -525,7 +597,7 @@ nav {
         width: 83%;
     }
 
-    #about .col_md_8 {
+    #about #left {
         padding-right: 6rem;
     }
 
@@ -538,7 +610,11 @@ nav {
     }
 
     #about .img-container i {
-        right: 25%;
+        right: 5%;
+    }
+
+    #about img {
+        width: 90%;
     }
     /* /#about */
     
@@ -572,16 +648,52 @@ nav {
         width: 60%;
     }
 
+    .col_lg_1 {
+        width: calc(100% / 12);
+    }
+
+    .col_lg_2 {
+        width: calc(100% / 12 * 2);
+    }
+
+    .col_lg_3 {
+        width: calc(100% / 12 * 3);
+    }
+
     .col_lg_4 {
         width: calc(100% / 12 * 4);
+    }
+
+    .col_lg_5 {
+        width: calc(100% / 12 * 5);
     }
 
     .col_lg_6 {
         width: calc(100% / 12 * 6);
     }
 
+    .col_lg_7 {
+        width: calc(100% / 12 * 7);
+    }
+
     .col_lg_8 {
         width: calc(100% / 12 * 8);
+    }
+
+    .col_lg_9 {
+        width: calc(100% / 12 * 9);
+    }
+
+    .col_lg_10 {
+        width: calc(100% / 12 * 10);
+    }
+
+    .col_lg_11 {
+        width: calc(100% / 12 * 11);
+    }
+
+    .col_lg_12 {
+        width: calc(100% / 12 * 12);
     }
     /* /utilities */
     .menu i {
@@ -601,7 +713,7 @@ nav {
         font-size: 0.8rem;
     }
     /* /header */
-    .demo .col_md_8 .card {
+    .demo #first_card .card {
         display: flex;
         padding-bottom: 0 !important;
     }
@@ -632,12 +744,12 @@ nav {
         font-size: 1.7rem;
     }
 
-    #planning .col_lg_6:first-child {
+    #planning #strategic {
         padding-bottom: 0;
         padding-left: 2;
     }
 
-    #planning .col_lg_6:last-child {
+    #planning #developement {
         padding-left: 2rem;
         display: flex;
         align-items: flex-end;
@@ -666,10 +778,6 @@ nav {
 
     #about .container {
         width: 55%;
-    }
-
-    #about .img-container i {
-        right: 30%;
     }
     /* /#about */
 
